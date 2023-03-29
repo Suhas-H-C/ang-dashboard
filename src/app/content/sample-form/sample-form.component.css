@@ -1,6 +1,0 @@
-.formField{
-    border: none; /* removes border */
-    outline: none; /* maintains removed border on focus */
-    border-bottom: 2px solid black;
-}
-

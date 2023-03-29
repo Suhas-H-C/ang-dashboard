@@ -10,27 +10,15 @@ import { MatTreeModule } from '@angular/material/tree';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { AgGridModule } from 'ag-grid-angular';
-import { AccordionBasicsComponent } from './accordion-basics/accordion-basics.component';
-import { ContentServiceService } from './content-service/content-service.service';
-import { DataGridComponent } from './data-grid/data-grid.component';
-import { DataProviderComponent } from './data-provider/data-provider.component';
-import { FeatureDevelopComponent } from './feature-develop/feature-develop.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { SampleFormComponent } from './sample-form/sample-form.component';
-import { FileParseUploadComponent } from './file-parse-upload/file-parse-upload.component';
-import { NavigateComponent } from './navigate/navigate.component';
 import { AlbumsComponent } from './albums/albums.component';
+import { ContentServiceService } from './content-service/content-service.service';
+import { NavigateComponent } from './navigate/navigate.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
-    SampleFormComponent,
-    DataGridComponent,
-    AccordionBasicsComponent,
-    FeatureDevelopComponent,
     PageNotFoundComponent,
-    DataProviderComponent,
-    FileParseUploadComponent,
     NavigateComponent,
     AlbumsComponent,
     UsersComponent
@@ -50,14 +38,10 @@ import { UsersComponent } from './users/users.component';
     RouterModule
   ],
   exports: [
-    SampleFormComponent,
-    DataGridComponent,
-    AccordionBasicsComponent,
-    FeatureDevelopComponent,
     PageNotFoundComponent,
-    DataProviderComponent,
-    FileParseUploadComponent,
-    NavigateComponent
+    NavigateComponent,
+    AlbumsComponent,
+    UsersComponent
   ],
   providers: [
     ContentServiceService

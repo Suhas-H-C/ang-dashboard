@@ -4,7 +4,9 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-page-not-found',
   template: `
     <h3>
-      page not found
+      Hi,
+      Welcome user.
+      Hope you had a wonderful day!
     </h3>
   `,
   styles: [
